@@ -8,33 +8,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Rana_Theme
+ * @package stoya
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses rana_theme_header_style()
+ * @uses stoya_header_style()
  */
-function rana_theme_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'rana_theme_custom_header_args', array(
+function stoya_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'stoya_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'rana_theme_header_style',
+		'wp-head-callback'       => 'stoya_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'rana_theme_custom_header_setup' );
+add_action( 'after_setup_theme', 'stoya_custom_header_setup' );
 
-if ( ! function_exists( 'rana_theme_header_style' ) ) :
+if ( ! function_exists( 'stoya_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see rana_theme_custom_header_setup().
+	 * @see stoya_custom_header_setup().
 	 */
-	function rana_theme_header_style() {
+	function stoya_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

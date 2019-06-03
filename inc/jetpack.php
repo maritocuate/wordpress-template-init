@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Rana_Theme
+ * @package stoya
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function rana_theme_jetpack_setup() {
+function stoya_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'rana_theme_infinite_scroll_render',
+		'render'    => 'stoya_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -28,7 +28,7 @@ function rana_theme_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details'    => array(
-			'stylesheet' => 'rana-theme-style',
+			'stylesheet' => 'stoya-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -42,12 +42,12 @@ function rana_theme_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'rana_theme_jetpack_setup' );
+add_action( 'after_setup_theme', 'stoya_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function rana_theme_infinite_scroll_render() {
+function stoya_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

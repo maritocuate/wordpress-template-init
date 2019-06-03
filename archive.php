@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Rana_Theme
+ * @package stoya
  */
 
 get_header();

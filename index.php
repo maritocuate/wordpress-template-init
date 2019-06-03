@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Rana_Theme
+ * @package stoya
  */
 
 get_header();
@@ -26,6 +26,9 @@ get_header();
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
+				<div class="container">
+					<p>nkdsnsdfndsfnjdsfndsfnmj</p>
+				</div>
 				<?php
 			endif;
 
