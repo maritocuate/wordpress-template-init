@@ -1,5 +1,3 @@
-[![Build Status](http://mqapps.com)](http://mqapps.com)
-
     MQ :: Wordpress Init Template
 ===
 
